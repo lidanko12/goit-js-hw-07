@@ -17,8 +17,8 @@ if (intTotalLength.length === totalLength) {
 	refs.inputVal.classList.remove('invalid')
   }
   if (intTotalLength.length === 0) {
-    refs.inputVal.classList.remove("valid");
-    refs.inputVal.classList.remove("invalid");
+    refs.inputVal.classList.remove('valid');
+    refs.inputVal.classList.remove('invalid');
   }
 }
  
