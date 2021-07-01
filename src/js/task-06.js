@@ -10,10 +10,15 @@ refs.inputVal.addEventListener('blur', inputOnBlur);
 
 function inputOnBlur(event) {
   const intTotalLength = event.currentTarget.value;
-  if (intTotalLength.length !== totalLength) {refs.inputVal.classList.add('invalid')}
+  if (intTotalLength.length !== totalLength)
+  { refs.inputVal.classList.add('invalid') }
 if (intTotalLength.length === totalLength) {
 	refs.inputVal.classList.add('valid')
 	refs.inputVal.classList.remove('invalid')
-} 
+  }
+  if (inputVal.value.length === 0) {
+    refs.inputVal.classList.remove("valid");
+    refs.inputVal.classList.remove("invalid");
+  }
 }
  
